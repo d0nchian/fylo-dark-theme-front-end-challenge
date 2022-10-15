@@ -18,6 +18,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" href="styles.css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <title>
       Frontend Mentor | Fylo landing page with dark theme and features grid
@@ -27,7 +28,9 @@
     <!-- <img src="./images/bg-curvy-desktop.svg" alt="" />
     <img src="./images/bg-curvy-mobile.svg" alt="" /> -->
 
-    <header class="space-between flex items-center justify-between">
+    <header
+      class="space-between flex items-center justify-between bg-[#252f40]"
+    >
       <div class="p-6">
         <img class="w-24" src="./images/logo.svg" alt="" />
       </div>
@@ -38,10 +41,10 @@
       </div>
     </header>
     <div
-      class="first-container flex flex-col items-center justify-center bg-[url('./images/bg-curvy-mobile.svg')] bg-center bg-no-repeat p-6 text-center"
+      class="first-container flex flex-col items-center justify-center bg-[#252f40] bg-[url('./images/bg-curvy-mobile.svg')] bg-contain bg-center bg-bottom bg-no-repeat p-6 text-center"
     >
       <img src="./images/illustration-intro.png" alt="" />
-      <h1 class="text-2xl outline">
+      <h1 class="text-2xl">
         All your files in one secure location, accessible anywhere.
       </h1>
       <p class="my-4 text-sm">
@@ -55,7 +58,9 @@
         >Get Started</a
       >
     </div>
-    <div class="second-container my-14 flex flex-col gap-14 p-6 text-center">
+    <div
+      class="second-container flex flex-col gap-14 bg-[#181f2a] px-6 py-14 text-center"
+    >
       <div class="flex flex-col items-center justify-center">
         <img src="./images/icon-access-anywhere.svg" alt="" class="w-[20%]" />
         <h3 class="my-6 text-lg font-bold">Access your files, anywhere</h3>
@@ -89,7 +94,7 @@
         </p>
       </div>
     </div>
-    <div class="third-container flex flex-col gap-4 p-6">
+    <div class="third-container flex flex-col gap-4 bg-[#181f2a] p-6">
       <img src="./images/illustration-stay-productive.png" alt="" />
       <h3 class="text-lg font-bold">Stay productive, wherever you are</h3>
       <p class="text-sm">
@@ -108,13 +113,13 @@
       /></a>
     </div>
     <div
-      class="fourth-container relative flex flex-col gap-4 bg-orange-600 pb-[70%] pt-24 outline"
+      class="fourth-container relative flex flex-col gap-4 bg-gradient-to-b from-[#181f2a] to-[#252f40] pb-[70%] pt-24"
     >
       <div
-        class="z-100 absolute top-[720px] left-0 right-0 mx-auto flex w-[90%] flex-col items-center justify-center gap-4 bg-gray-600 p-6 text-center outline"
+        class="z-100 absolute top-[770px] left-0 right-0 mx-auto flex w-[90%] flex-col items-center justify-center gap-4 rounded-md bg-[#2a364d] p-6 text-center"
       >
-        <h3 class="w-full text-lg font-bold outline">Get early access today</h3>
-        <p class="w-full text-sm outline">
+        <h3 class="w-full text-lg font-bold">Get early access today</h3>
+        <p class="w-full text-sm">
           It only takes a minute to sign up and our free starter tier is
           extremely generous. If you have any questions, our support team would
           be happy to help you.
@@ -123,7 +128,7 @@
           <input
             type="email"
             id="email"
-            class="w-[250px] rounded-full py-2 text-center text-black outline"
+            class="w-[250px] rounded-full py-2 text-center text-black"
             placeholder="email@example.com"
           />
         </form>
@@ -136,7 +141,7 @@
           Get Started For Free
         </button>
       </div>
-      <div class="relative mx-8 rounded bg-gray-600 p-6">
+      <div class="relative mx-8 rounded bg-[#2a364d] p-6">
         <img
           src="./images/bg-quotes.png"
           alt=""
@@ -159,7 +164,7 @@
           </div>
         </div>
       </div>
-      <div class="mx-8 rounded bg-gray-600 p-6">
+      <div class="mx-8 rounded bg-[#2a364d] p-6">
         <p class="mb-4 text-xs">
           Fylo has improved our team productivity by an order of magnitude.
           Since making the switch our team has become a well-oiled collaboration
@@ -177,7 +182,7 @@
           </div>
         </div>
       </div>
-      <div class="mx-8 rounded bg-gray-600 p-6">
+      <div class="mx-8 rounded bg-[#2a364d] p-6">
         <p class="mb-4 text-xs">
           Fylo has improved our team productivity by an order of magnitude.
           Since making the switch our team has become a well-oiled collaboration
@@ -196,7 +201,7 @@
         </div>
       </div>
     </div>
-    <footer class="bg-green-500 p-6 outline">
+    <footer class="bg-[#181f2a] p-6 outline">
       <div class="footer-container flex flex-col gap-6 pt-[70%]">
         <div class="">
           <img src="./images/logo.svg" alt="" class="mx-6 w-[60%]" />
