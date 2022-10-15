@@ -43,3 +43,5 @@
 
   background: rgb(101,226,217);
 background: linear-gradient(100deg, rgba(101,226,217,1) 0%, rgba(51,158,204,1) 100%);
+
+mb-[50%]
