@@ -18,6 +18,12 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles.css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <title>
@@ -34,114 +40,146 @@
       <div class="p-6">
         <img class="w-24" src="./images/logo.svg" alt="" />
       </div>
-      <div class="flex gap-4 pr-6 text-sm">
+      <div class="flex gap-4 pr-6 text-sm sm:text-base">
         <a href="#">Features</a>
         <a href="#">Team</a>
         <a href="#">Sign In</a>
       </div>
     </header>
-    <div
-      class="first-container flex flex-col items-center justify-center bg-[#252f40] bg-[url('./images/bg-curvy-mobile.svg')] bg-contain bg-center bg-bottom bg-no-repeat p-6 text-center"
+    <main
+      class="first-container flex flex-col items-center justify-center gap-4 bg-[#252f40] bg-[url('./images/bg-curvy-mobile.svg')] bg-contain bg-center bg-bottom bg-no-repeat p-6 text-center sm:bg-[url('./images/bg-curvy-desktop.svg')]"
     >
-      <img src="./images/illustration-intro.png" alt="" />
-      <h1 class="text-2xl">
+      <img
+        class="sm:max-w-[600px]"
+        src="./images/illustration-intro.png"
+        alt=""
+      />
+      <h1
+        class="font-['Raleway'] text-2xl font-bold sm:max-w-[600px] sm:text-3xl"
+      >
         All your files in one secure location, accessible anywhere.
       </h1>
-      <p class="my-4 text-sm">
+      <p class="my-4 text-sm sm:max-w-[500px] sm:text-base">
         Fylo stores all your most important files in one secure location. Access
         them wherever you need, share and collaborate with friends family, and
         co-workers.
       </p>
       <a
         href="#"
-        class="w-[70%] rounded-full bg-[rgb(101,226,217)] bg-gradient-to-r from-[rgba(101,226,217,1)] to-[rgba(51,158,204,1)] py-2"
+        class="w-[70%] rounded-full bg-[rgb(101,226,217)] bg-gradient-to-r from-[rgba(101,226,217,1)] to-[rgba(51,158,204,1)] py-2 sm:max-w-[250px]"
         >Get Started</a
       >
-    </div>
-    <div
-      class="second-container flex flex-col gap-14 bg-[#181f2a] px-6 py-14 text-center"
+    </main>
+    <section
+      class="second-container flex flex-col gap-14 bg-[#181f2a] px-6 py-14 text-center sm:grid sm:grid-cols-2 sm:grid-rows-2 sm:items-center sm:justify-center sm:px-[20%]"
     >
       <div class="flex flex-col items-center justify-center">
-        <img src="./images/icon-access-anywhere.svg" alt="" class="w-[20%]" />
-        <h3 class="my-6 text-lg font-bold">Access your files, anywhere</h3>
+        <img src="./images/icon-access-anywhere.svg" alt="" class="h-[20%]" />
+        <h3 class="my-6 font-['Raleway'] text-lg font-bold">
+          Access your files, anywhere
+        </h3>
         <p class="text-sm">
           The ability to use a smartphone, tablet, or computer to access your
           account means your files follow you everywhere.
         </p>
       </div>
       <div class="flex flex-col items-center justify-center">
-        <img src="./images/icon-security.svg" alt="" class="w-[20%]" />
-        <h3 class="my-6 text-lg font-bold">Real-time collaboration</h3>
+        <img src="./images/icon-security.svg" alt="" class="h-[20%]" />
+        <h3 class="my-6 font-['Raleway'] text-lg font-bold">
+          Real-time collaboration
+        </h3>
         <p class="text-sm">
           2-factor authentication and user-controlled encryption are just a
           couple of the security features we allow to help secure your files.
         </p>
       </div>
       <div class="flex flex-col items-center justify-center">
-        <img src="./images/icon-collaboration.svg" alt="" class="w-[20%]" />
-        <h3 class="my-6 text-lg font-bold">Access your files, anywhere</h3>
+        <img src="./images/icon-collaboration.svg" alt="" class="h-[20%]" />
+        <h3 class="my-6 font-['Raleway'] text-lg font-bold">
+          Access your files, anywhere
+        </h3>
         <p class="text-sm">
           Securely share files and folders with friends, family and colleagues
           for live collaboration. No email attachments required.
         </p>
       </div>
       <div class="flex flex-col items-center justify-center">
-        <img src="./images/icon-any-file.svg" alt="" class="w-[20%]" />
-        <h3 class="my-6 text-lg font-bold">Store any type of file</h3>
+        <img src="./images/icon-any-file.svg" alt="" class="h-[20%]" />
+        <h3 class="my-6 font-['Raleway'] text-lg font-bold">
+          Store any type of file
+        </h3>
         <p class="text-sm">
           Whether you're sharing holidays photos or work documents, Fylo has you
           covered allowing for all file types to be securely stored and shared.
         </p>
       </div>
-    </div>
-    <div class="third-container flex flex-col gap-4 bg-[#181f2a] p-6">
-      <img src="./images/illustration-stay-productive.png" alt="" />
-      <h3 class="text-lg font-bold">Stay productive, wherever you are</h3>
-      <p class="text-sm">
-        Never let location be an issue when accessing your files. Fylo has you
-        covered for all of your file storage needs.
-      </p>
-      <p class="text-sm">
-        Securely share files and folders with friends, family and colleagues for
-        live collaboration. No email attachments required.
-      </p>
-      <a
-        class="flex items-center text-xs text-[rgba(101,226,217,1)] underline"
-        href="#"
-        >See how Flyo works
-        <img class="p-1" src="./images/icon-arrow.svg" alt=""
-      /></a>
-    </div>
-    <div
-      class="fourth-container relative flex flex-col gap-4 bg-gradient-to-b from-[#181f2a] to-[#252f40] pb-[70%] pt-24"
+    </section>
+    <section
+      class="third-container flex flex-col gap-4 bg-[#181f2a] p-6 sm:grid sm:grid-cols-2 sm:flex-row sm:items-center sm:justify-center sm:px-14 sm:py-0"
+    >
+      <div>
+        <img
+          class="m-auto w-[80%] sm:max-w-[600px]"
+          src="./images/illustration-stay-productive.png"
+          alt=""
+        />
+      </div>
+      <div class="flex flex-col gap-4 sm:max-w-lg">
+        <h3 class="font-['Raleway'] text-lg font-bold sm:text-3xl">
+          <span class="sm:block">Stay productive,</span> wherever you are
+        </h3>
+        <p class="text-sm sm:text-base">
+          Never let location be an issue when accessing your files. Fylo has you
+          covered for all of your file storage needs.
+        </p>
+        <p class="text-sm sm:text-base">
+          Securely share files and folders with friends, family and colleagues
+          for live collaboration. No email attachments required.
+        </p>
+        <a
+          class="flex items-center text-xs text-[rgba(101,226,217,1)] underline"
+          href="#"
+          >See how Flyo works
+          <img class="p-1" src="./images/icon-arrow.svg" alt=""
+        /></a>
+      </div>
+    </section>
+    <section
+      class="fourth-container relative flex flex-col items-center justify-center gap-4 bg-gradient-to-b from-[#181f2a] to-[#252f40] pb-[70%] pt-24 sm:flex-row sm:gap-6 sm:px-24 sm:pb-[15%]"
     >
       <div
-        class="z-100 absolute top-[770px] left-0 right-0 mx-auto flex w-[90%] flex-col items-center justify-center gap-4 rounded-md bg-[#2a364d] p-6 text-center"
+        class="z-100 absolute top-[730px] left-0 right-0 mx-auto flex w-[90%] flex-col items-center justify-center gap-4 rounded-md bg-[#2a364d] p-6 text-center sm:top-[360px] sm:max-w-[700px] lg:top-[400px]"
       >
-        <h3 class="w-full text-lg font-bold">Get early access today</h3>
-        <p class="w-full text-sm">
+        <h3 class="w-full font-['Raleway'] text-lg font-bold sm:text-2xl">
+          Get early access today
+        </h3>
+        <p class="w-full text-sm sm:w-[80%]">
           It only takes a minute to sign up and our free starter tier is
           extremely generous. If you have any questions, our support team would
           be happy to help you.
         </p>
-        <form action="#" id="emailform">
-          <input
-            type="email"
-            id="email"
-            class="w-[250px] rounded-full py-2 text-center text-black"
-            placeholder="email@example.com"
-          />
-        </form>
-        <button
-          class="w-[250px] rounded-full bg-[rgb(101,226,217)] bg-gradient-to-r from-[rgba(101,226,217,1)] to-[rgba(51,158,204,1)] py-2"
-          type="submit"
-          form="nameform"
-          value="Submit"
-        >
-          Get Started For Free
-        </button>
+        <div class="flex flex-col gap-4 sm:flex-row">
+          <form action="#" id="emailform">
+            <input
+              type="email"
+              id="email"
+              class="w-[250px] rounded-full py-2 text-center text-black"
+              placeholder="email@example.com"
+            />
+          </form>
+          <button
+            class="w-[250px] rounded-full bg-[rgb(101,226,217)] bg-gradient-to-r from-[rgba(101,226,217,1)] to-[rgba(51,158,204,1)] py-2"
+            type="submit"
+            form="nameform"
+            value="Submit"
+          >
+            Get Started For Free
+          </button>
+        </div>
       </div>
-      <div class="relative mx-8 rounded bg-[#2a364d] p-6">
+      <div
+        class="relative mx-8 rounded bg-[#2a364d] p-6 sm:mx-0 sm:max-w-[280px]"
+      >
         <img
           src="./images/bg-quotes.png"
           alt=""
@@ -164,7 +202,7 @@
           </div>
         </div>
       </div>
-      <div class="mx-8 rounded bg-[#2a364d] p-6">
+      <div class="mx-8 rounded bg-[#2a364d] p-6 sm:mx-0 sm:max-w-[280px]">
         <p class="mb-4 text-xs">
           Fylo has improved our team productivity by an order of magnitude.
           Since making the switch our team has become a well-oiled collaboration
@@ -182,7 +220,7 @@
           </div>
         </div>
       </div>
-      <div class="mx-8 rounded bg-[#2a364d] p-6">
+      <div class="mx-8 rounded bg-[#2a364d] p-6 sm:mx-0 sm:max-w-[280px]">
         <p class="mb-4 text-xs">
           Fylo has improved our team productivity by an order of magnitude.
           Since making the switch our team has become a well-oiled collaboration
@@ -200,15 +238,21 @@
           </div>
         </div>
       </div>
-    </div>
-    <footer class="bg-[#181f2a] p-6 outline">
-      <div class="footer-container flex flex-col gap-6 pt-[70%]">
-        <div class="">
-          <img src="./images/logo.svg" alt="" class="mx-6 w-[60%]" />
-        </div>
-        <div class="flex">
-          <img src="./images/icon-location.svg" alt="" class="my-1 h-4" />
-          <p class="mx-4 text-sm">
+    </section>
+    <footer class="bg-[#181f2a] p-6 pt-[70%] sm:pt-[15%]">
+      <div class="my-6 flex sm:pl-16">
+        <img src="./images/logo.svg" alt="" class="mx-6 max-w-[60%] p-4" />
+      </div>
+      <div
+        class="footer-container flex flex-col items-start justify-evenly gap-8 sm:flex-row"
+      >
+        <div class="mt-6 flex items-start justify-start sm:mt-0">
+          <img
+            src="./images/icon-location.svg"
+            alt=""
+            class="my-1 h-4 sm:my-0 sm:h-6 sm:pt-2"
+          />
+          <p class="mx-4 text-sm sm:max-w-[300px]">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua
           </p>
@@ -224,7 +268,7 @@
           </div>
         </div>
         <div class="">
-          <ul class="flex flex-col gap-2 py-4 text-sm">
+          <ul class="flex flex-col justify-start gap-2 py-4 text-sm sm:py-0">
             <li><a href="#">About Us</a></li>
             <li><a href="#">Jobs</a></li>
             <li><a href="#">Press</a></li>
@@ -232,13 +276,15 @@
           </ul>
         </div>
         <div>
-          <ul class="flex flex-col gap-2 py-4 text-sm">
+          <ul class="flex flex-col gap-2 py-4 text-sm sm:py-0">
             <li><a href="#">Contact Us</a></li>
             <li><a href="#">Terms</a></li>
             <li><a href="#">Privacy</a></li>
           </ul>
         </div>
-        <div class="flex items-start justify-center gap-8 py-8">
+        <div
+          class="flex items-start justify-center gap-8 py-8 sm:flex-col sm:gap-2 sm:py-0"
+        >
           <a href="#">
             <i
               class="fa-brands fa-twitter rounded-full border p-2 text-white"
