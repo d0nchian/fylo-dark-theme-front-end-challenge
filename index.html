@@ -158,17 +158,18 @@
           extremely generous. If you have any questions, our support team would
           be happy to help you.
         </p>
-        <div class="flex flex-col gap-4 sm:flex-row">
-          <form action="#" id="emailform">
+        <div class="flex flex-col gap-4 sm:w-[90%] sm:flex-row">
+          <form action="#" id="emailform" class="sm:w-[60%]">
             <input
               type="email"
               id="email"
-              class="w-[250px] rounded-full py-2 text-center text-black"
+              class="w-[250px] rounded-full py-2 text-center text-black sm:w-[100%]"
               placeholder="email@example.com"
+              required
             />
           </form>
           <button
-            class="w-[250px] rounded-full bg-[rgb(101,226,217)] bg-gradient-to-r from-[rgba(101,226,217,1)] to-[rgba(51,158,204,1)] py-2"
+            class="w-[250px] rounded-full bg-[rgb(101,226,217)] bg-gradient-to-r from-[rgba(101,226,217,1)] to-[rgba(51,158,204,1)] py-2 sm:w-[40%]"
             type="submit"
             form="nameform"
             value="Submit"
