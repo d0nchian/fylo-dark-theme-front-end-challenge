@@ -41,9 +41,9 @@
         <img class="w-24" src="./images/logo.svg" alt="" />
       </div>
       <div class="flex gap-4 pr-6 text-sm sm:text-base">
-        <a href="#">Features</a>
-        <a href="#">Team</a>
-        <a href="#">Sign In</a>
+        <a class="hover:font-bold hover:underline" href="#">Features</a>
+        <a class="hover:font-bold hover:underline" href="#">Team</a>
+        <a class="hover:font-bold hover:underline" href="#">Sign In</a>
       </div>
     </header>
     <main
@@ -66,7 +66,7 @@
       </p>
       <a
         href="#"
-        class="w-[70%] rounded-full bg-[rgb(101,226,217)] bg-gradient-to-r from-[rgba(101,226,217,1)] to-[rgba(51,158,204,1)] py-2 sm:max-w-[250px]"
+        class="w-[70%] rounded-full bg-[rgb(101,226,217)] bg-gradient-to-r from-[rgba(101,226,217,1)] to-[rgba(51,158,204,1)] py-2 hover:animate-pulse sm:max-w-[250px]"
         >Get Started</a
       >
     </main>
@@ -115,16 +115,16 @@
       </div>
     </section>
     <section
-      class="third-container flex flex-col gap-4 bg-[#181f2a] p-6 sm:grid sm:grid-cols-2 sm:flex-row sm:items-center sm:justify-center sm:px-14 sm:py-0"
+      class="third-container flex flex-col gap-4 bg-[#181f2a] p-6 sm:flex-row sm:items-center sm:justify-center sm:gap-14 sm:px-14 sm:py-14"
     >
       <div>
         <img
-          class="m-auto w-[80%] sm:max-w-[600px]"
+          class="m-auto w-[80%] sm:max-w-[100%]"
           src="./images/illustration-stay-productive.png"
           alt=""
         />
       </div>
-      <div class="flex flex-col gap-4 sm:max-w-lg">
+      <div class="flex flex-col justify-center gap-4 sm:max-w-lg">
         <h3 class="font-['Raleway'] text-lg font-bold sm:text-3xl">
           <span class="sm:block">Stay productive,</span> wherever you are
         </h3>
@@ -137,8 +137,9 @@
           for live collaboration. No email attachments required.
         </p>
         <a
-          class="flex items-center text-xs text-[rgba(101,226,217,1)] underline"
+          class="group flex items-center text-sm text-[rgba(101,226,217,1)] underline hover:text-white"
           href="#"
+          class=""
           >See how Flyo works
           <img class="p-1" src="./images/icon-arrow.svg" alt=""
         /></a>
@@ -147,37 +148,6 @@
     <section
       class="fourth-container relative flex flex-col items-center justify-center gap-4 bg-gradient-to-b from-[#181f2a] to-[#252f40] pb-[70%] pt-24 sm:gap-6 sm:px-24 sm:pb-[15%] lg:flex-row"
     >
-      <!-- <div
-        class="z-100 absolute top-[730px] left-0 right-0 mx-auto flex w-[90%] flex-col items-center justify-center gap-4 rounded-md bg-[#2a364d] p-6 text-center sm:top-[640px] sm:max-w-[700px] lg:top-[400px]"
-      >
-        <h3 class="w-full font-['Raleway'] text-lg font-bold sm:text-2xl">
-          Get early access today
-        </h3>
-        <p class="w-full text-sm sm:w-[80%]">
-          It only takes a minute to sign up and our free starter tier is
-          extremely generous. If you have any questions, our support team would
-          be happy to help you.
-        </p>
-        <div class="flex flex-col gap-4 sm:w-[90%] sm:flex-row">
-          <form action="#" id="emailform" class="sm:w-[60%]">
-            <input
-              type="email"
-              id="email"
-              class="w-[250px] rounded-full py-2 text-center text-black sm:w-[100%]"
-              placeholder="email@example.com"
-              required
-            />
-          </form>
-          <button
-            class="w-[250px] rounded-full bg-[rgb(101,226,217)] bg-gradient-to-r from-[rgba(101,226,217,1)] to-[rgba(51,158,204,1)] py-2 sm:w-[40%]"
-            type="submit"
-            form="nameform"
-            value="Submit"
-          >
-            Get Started For Free
-          </button>
-        </div>
-      </div> -->
       <div
         class="first-card relative z-10 mx-8 rounded bg-[#2a364d] p-6 sm:mx-0 sm:max-w-[380px]"
       >
@@ -244,7 +214,7 @@
     </section>
     <footer class="relative bg-[#181f2a] p-6 pt-[70%] sm:pt-[15%]">
       <div
-        class="z-100 absolute top-[-15%] left-0 right-0 mx-auto flex w-[90%] flex-col items-center justify-center gap-4 rounded-md bg-[#2a364d] p-6 text-center sm:max-w-[700px]"
+        class="z-100 absolute top-[-15%] left-0 right-0 mx-auto flex w-[90%] flex-col items-center justify-center gap-4 rounded-md bg-[#2a364d] p-8 text-center sm:max-w-[700px]"
       >
         <h3 class="w-full font-['Raleway'] text-lg font-bold sm:text-2xl">
           Get early access today
@@ -255,23 +225,24 @@
           be happy to help you.
         </p>
         <div class="flex flex-col gap-4 sm:w-[90%] sm:flex-row">
-          <form action="#" id="emailform" class="sm:w-[60%]">
-            <input
-              type="email"
-              id="email"
-              class="w-[250px] rounded-full py-2 text-center text-black sm:w-[100%]"
-              placeholder="email@example.com"
-              required
-            />
-          </form>
+          <input
+            class="email relative w-full appearance-none rounded-full border py-2 px-8 leading-tight text-gray-700 shadow focus:outline-none"
+            id="email"
+            type="email"
+            placeholder="email@example.com"
+          />
           <button
-            class="w-[250px] rounded-full bg-[rgb(101,226,217)] bg-gradient-to-r from-[rgba(101,226,217,1)] to-[rgba(51,158,204,1)] py-2 sm:w-[40%]"
+            class="btn w-[100%] rounded-full bg-[rgb(101,226,217)] bg-gradient-to-r from-[rgba(101,226,217,1)] to-[rgba(51,158,204,1)] py-3 px-6 hover:animate-pulse sm:w-[50%]"
             type="submit"
             form="nameform"
             value="Submit"
           >
             Get Started For Free
           </button>
+          <div
+            class="absolute bottom-2 left-24 text-sm font-bold"
+            id="alert"
+          ></div>
         </div>
       </div>
       <div class="my-6 flex sm:pl-16">
@@ -301,19 +272,19 @@
             <p class="mx-4">example@fylo.com</p>
           </div>
         </div>
-        <div class="">
+        <div>
           <ul class="flex flex-col justify-start gap-2 py-4 text-sm sm:py-0">
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Jobs</a></li>
-            <li><a href="#">Press</a></li>
-            <li><a href="#">Blog</a></li>
+            <li><a href="#" class="hover:font-bold">About Us</a></li>
+            <li><a href="#" class="hover:font-bold">Jobs</a></li>
+            <li><a href="#" class="hover:font-bold">Press</a></li>
+            <li><a href="#" class="hover:font-bold">Blog</a></li>
           </ul>
         </div>
         <div>
           <ul class="flex flex-col gap-2 py-4 text-sm sm:py-0">
-            <li><a href="#">Contact Us</a></li>
-            <li><a href="#">Terms</a></li>
-            <li><a href="#">Privacy</a></li>
+            <li><a href="#" class="hover:font-bold">Contact Us</a></li>
+            <li><a href="#" class="hover:font-bold">Terms</a></li>
+            <li><a href="#" class="hover:font-bold">Privacy</a></li>
           </ul>
         </div>
         <div
@@ -321,17 +292,22 @@
         >
           <a href="#">
             <i
-              class="fa-brands fa-twitter rounded-full border p-2 text-white"
+              class="fa-brands fa-twitter rounded-full border p-2 text-white hover:animate-spin hover:border-[#65E2D9] hover:text-[#65E2D9]"
             ></i>
           </a>
           <a href="#" class="text-center">
-            <i class="fa-brands fa-facebook-f w-8 rounded-full border p-2"></i>
+            <i
+              class="fa-brands fa-facebook-f w-8 rounded-full border p-2 hover:animate-spin hover:border-[#65E2D9] hover:text-[#65E2D9]"
+            ></i>
           </a>
           <a href="#">
-            <i class="fa-brands fa-instagram rounded-full border p-2"></i>
+            <i
+              class="fa-brands fa-instagram rounded-full border p-2 hover:animate-spin hover:border-[#65E2D9] hover:text-[#65E2D9]"
+            ></i>
           </a>
         </div>
       </div>
+      <script src="script.js"></script>
     </footer>
   </body>
 </html>
